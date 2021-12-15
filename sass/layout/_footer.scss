@@ -1,0 +1,139 @@
+.bottom {
+  background-color: var(--background-footer-color);
+  padding: 60px 0;
+}
+
+.footer-container {
+  display: flex;
+}
+
+.logo__footer--studio {
+  color: var(--prime-color);
+}
+
+.contact {
+  margin-top: 20px;
+}
+
+.map-link {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--prime-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.cont {
+  margin-top: 9px;
+}
+
+.footer-contact__link {
+  display: inline-block;
+
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--footer-contact-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.join-us {
+  margin-left: 70px;
+  padding-top: 12px;
+}
+
+.join-us-text {
+  color: var(--prime-color);
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.footer-title {
+  color: var(--prime-color);
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.join-us-list {
+  display: flex;
+}
+
+.join-us-link {
+  display: flex;
+  padding: 12px;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  border-radius: 50%;
+  fill: var(--prime-color);
+  background-color: var(--shadow-color);
+
+  &:hover,
+  &:hover {
+    background-color: var(--accent-color);
+  }
+}
+
+.join-us-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-form {
+  margin-left: auto;
+  padding-top: 12px;
+}
+
+.form-flex {
+  display: flex;
+  align-items: center;
+}
+
+.subscribe-input {
+  margin-right: 12px;
+  padding-left: 16px;
+  height: 50px;
+  width: 358px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: transparent;
+
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+
+  &:focus {
+    border-color: var(--accent-color);
+  }
+}
+
+.send-icon {
+  fill: currentColor;
+  margin-left: 10px;
+}
+
+.main-btn-flex {
+  display: flex;
+  align-items: center;
+}

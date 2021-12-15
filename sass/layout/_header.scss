@@ -1,0 +1,134 @@
+.page-top {
+  background-color: var(--prime-color);
+}
+
+.page-top--line {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.page-top__container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.logo--web {
+  color: var(--accent-color);
+}
+
+.logo--studio {
+  color: var(--black);
+}
+
+.nav {
+  margin-left: 93px;
+}
+
+.nav__list {
+  display: flex;
+}
+
+.nav__item {
+  margin-right: 50px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.nav__link {
+  display: block;
+  padding: 32px 0;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--section__title-color);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.nav__link--current {
+  position: relative;
+  display: block;
+  color: var(--accent-color);
+
+  &::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    height: 4px;
+
+    display: block;
+    content: "";
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 2px;
+  }
+
+  &.studio::after {
+    width: 48px;
+    background-image: url(../images/hover-studio.png);
+  }
+
+  &.portfolio::after {
+    width: 78px;
+    background-image: url(../images/hover-portfolio.png);
+  }
+}
+
+.contact {
+  display: flex;
+  margin-left: auto;
+}
+
+.contact__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.contact__link {
+  padding: 32px 0;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.envelope {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.smartphone {
+  margin-right: 10px;
+  fill: currentColor;
+}

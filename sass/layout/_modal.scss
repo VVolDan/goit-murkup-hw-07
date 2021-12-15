@@ -1,0 +1,214 @@
+.backdrop {
+  transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1), visibility 300ms;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: var(--modal-shade-color);
+  opacity: 1;
+
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0.7);
+}
+
+.modal {
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translate(-50%, -50%) scale(1);
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  padding: 40px;
+  max-width: 528px;
+  min-height: 580px;
+  background-color: var(--prime-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.form-field {
+  margin-bottom: 10px;
+}
+
+.input {
+  width: 100%;
+  padding-left: 35px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: none;
+
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus + .icon {
+    fill: var(--accent-color);
+  }
+
+  &:focus {
+    border-color: var(--accent-color);
+  }
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--section__title-color);
+  margin-bottom: 12px;
+}
+
+.input-text {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  margin-bottom: 4px;
+  display: block;
+}
+
+.comment-field {
+  margin-bottom: 20px;
+}
+
+.comment {
+  width: 100%;
+  height: 120px;
+  border: 1px solid;
+  border-radius: 4px;
+  padding: 12px 16px;
+  background-color: transparent;
+  outline: none;
+  resize: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+
+  &::placeholder {
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+
+    color: rgba(117, 117, 117, 0.5);
+  }
+
+  &:focus {
+    border-color: var(--accent-color);
+  }
+}
+
+.close-btn {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-flex;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background-color: var(--prime-color);
+
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: var(--prime-color);
+    background-color: var(--accent-color);
+  }
+}
+
+.close-icon {
+  fill: currentColor;
+}
+
+.checkbox-field {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkbox-input {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  position: absolute;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.checkbox-icon {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  margin-right: 8px;
+
+  border: 2px solid var(--section__title-color);
+  border-radius: 2px;
+  background-size: contain;
+  cursor: pointer;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-size 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.checkbox-input:checked + .checkbox-icon {
+  background-image: url(../images/icon-check.svg);
+  border-color: var(--accent-color);
+  background-color: var(--accent-color);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.conditions {
+  margin-left: 5px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: var(--accent-color);
+  text-decoration: underline;
+}
