@@ -526,19 +526,19 @@ body {
   padding-top: 47px;
 }
 
-.doing-list {
+.doing__list {
   display: flex;
 }
 
-.doing-item {
+.doing__item {
   width: calc(100% / 3);
 }
 
-.doing-item::not(:first-child) {
+.doing__item::not(:first-child) {
   margin-left: 30px;
 }
 
-.doing-box {
+.doing__box {
   position: relative;
   width: 100%;
   height: 100%;
@@ -552,7 +552,7 @@ body {
   background-color: var(--doing-shade-color);
 }
 
-.description-title {
+.description__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
