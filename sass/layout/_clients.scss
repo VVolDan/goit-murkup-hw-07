@@ -1,19 +1,19 @@
-.clients-section {
+.clients {
   padding: 94px 0;
 }
 
-.clients-list {
+.clients__list {
   display: flex;
 }
 
-.clients-item {
+.clients__item {
   flex-basis: calc(100% / 6);
   &:not(:last-child) {
     margin-right: 30px;
   }
 }
 
-.clients-link {
+.clients__link {
   display: flex;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -32,6 +32,6 @@
   }
 }
 
-.clients-link-icon {
+.clients__link--normal {
   fill: currentColor;
 }
