@@ -81,7 +81,7 @@ img {
 /* --------------------------Header------------------------------- */
 
 /* .top {
-  background-color: var(--prime-color);
+  background-color: $prime-color;
 }
 
 ..page-top--line {
@@ -103,15 +103,15 @@ img {
 }
 
 .logo--web {
-  color: var(--accent-color);
+  color: $accent-color;
 }
 
 .logo--studio {
-  color: var(--black);
+  color: $header-studio-color;
 }
 
 .white-logo {
-  color: var(--prime-color);
+  color: $prime-color;
 }
 
 .nav {
@@ -147,13 +147,13 @@ img {
 
 .nav__link:hover,
 .nav__link:focus {
-  color: var(--accent-color);
+  color: $accent-color;
 }
 
 .current {
   position: relative;
   display: block;
-  color: var(--accent-color);
+  color: $accent-color;
 }
 
 .current::after {
@@ -205,7 +205,7 @@ img {
 
 .contact__link:hover,
 .contact__link:focus {
-  color: var(--accent-color);
+  color: $accent-color;
 }
 
 .envelope {
@@ -230,7 +230,7 @@ img {
     url(../images/mainbackrgound.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: var(--background-footer-color);
+  background-color: $background-footer-color;
 }
 
 .main-section__title {
@@ -242,7 +242,7 @@ img {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--prime-color);
+  color: $prime-color;
 }
 
 .main-btn {
@@ -254,20 +254,20 @@ img {
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  background-color: var(--accent-color);
+  background-color: $accent-color;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  color: var(--prime-color);
+  color: $prime-color;
   border: none;
   border-radius: 4px;
 }
 
 .main-btn:hover,
 .main-btn:focus {
-  background-color: var(--accent-color-main-bottom);
+  background-color: $accent-color-main-bottom;
 } */
 
 /* ----------------------Modal window------------------------- */
@@ -280,7 +280,7 @@ img {
   height: 100%;
   top: 0;
   left: 0;
-  background-color: var(--modal-shade-color);
+  background-color: $modal-shade-color;
   opacity: 1;
 }
 
@@ -305,7 +305,7 @@ img {
   padding: 40px;
   max-width: 528px;
   min-height: 580px;
-  background-color: var(--prime-color);
+  background-color: $prime-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -342,11 +342,11 @@ img {
 }
 
 .input:focus + .icon {
-  fill: var(--accent-color);
+  fill: $accent-color;
 }
 
 .input:focus {
-  border-color: var(--accent-color);
+  border-color: $accent-color;
 }
 
 .modal__title {
@@ -396,7 +396,7 @@ img {
 }
 
 .comment:focus {
-  border-color: var(--accent-color);
+  border-color: $accent-color;
 }
 
 .close-btn {
@@ -407,7 +407,7 @@ img {
   height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  background-color: var(--prime-color);
+  background-color: $prime-color;
 
   position: absolute;
   top: 8px;
@@ -420,8 +420,8 @@ img {
 
 .close-btn:hover,
 .close-btn:focus {
-  color: var(--prime-color);
-  background-color: var(--accent-color);
+  color: $prime-color;
+  background-color: $accent-color;
 }
 
 .close-icon {
@@ -466,8 +466,8 @@ img {
 
 .checkbox-input:checked + .checkbox-field__icon {
   background-image: url(../images/icon\ check.svg);
-  border-color: var(--accent-color);
-  background-color: var(--accent-color);
+  border-color: $accent-color;
+  background-color: $accent-color;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -483,7 +483,7 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
 
-  color: var(--accent-color);
+  color: $accent-color;
   text-decoration: underline;
 } */
 
@@ -523,7 +523,7 @@ img {
   justify-content: center;
   align-items: center;
   padding: 25px 100px;
-  background-color: var(--background-team-color);
+  background-color: $background-team-color;
   border-radius: 4px;
   margin-bottom: 30px;
 }
@@ -573,7 +573,7 @@ img {
   bottom: 0;
   padding: 27px 0;
   width: 100%;
-  background-color: var(--doing-shade-color);
+  background-color: $doing-shade-color;
 }
 
 .description__title {
@@ -583,13 +583,13 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-align: center;
-  color: var(--prime-color);
+  color: $prime-color;
 } */
 
 /* ----------------------Our team------------------------- */
 
 /* .team {
-  background-color: var(--background-team-color);
+  background-color: $background-team-color;
 }
 
 .team__list {
@@ -608,7 +608,7 @@ img {
 }
 
 .team__sign {
-  background-color: var(--prime-color);
+  background-color: $prime-color;
   padding: 30px 32px;
   display: flex;
   flex-direction: column;
@@ -644,7 +644,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--button-color);
+  color: $button-color;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -659,8 +659,8 @@ img {
 
 .web-contact__link:hover,
 .web-contact__link:focus {
-  color: var(--prime-color);
-  background-color: var(--accent-color);
+  color: $prime-color;
+  background-color: $accent-color;
 } */
 
 /* ----------------------Постоянные клиенты------------------------- */
@@ -687,12 +687,12 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  border: 1px solid var(--button-color);
+  border: 1px solid $button-color;
   padding: 16px 32px;
   border-radius: 4px;
 
-  background-color: var(--prime-color);
-  color: var(--button-color);
+  background-color: $prime-color;
+  color: $button-color;
 }
 
 .clients__link--normal {
@@ -701,13 +701,13 @@ img {
 
 .clients__link:hover,
 .clients__link:focus {
-  border-color: var(--accent-color);
-  color: var(--accent-color);
+  border-color: $accent-color;
+  color: $accent-color;
 } */
 
 /* ----------------------Footer------------------------- */
 /* .bottom {
-  background-color: var(--background-footer-color);
+  background-color: $background-footer-color;
   padding: 60px 0;
 }
 
@@ -716,7 +716,7 @@ img {
 }
 
 .white-logo {
-  color: var(--prime-color);
+  color: $prime-color;
 }
 
 .contact {
@@ -728,13 +728,13 @@ img {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--prime-color);
+  color: $prime-color;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .map-link:hover,
 .map-link:focus {
-  color: var(--accent-color);
+  color: $accent-color;
 }
 
 .cont {
@@ -748,13 +748,13 @@ img {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--footer-contact-color);
+  color: $footer-contact-color;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-contact__link:hover,
 .footer-contact__link:focus {
-  color: var(--accent-color);
+  color: $accent-color;
 }
 
 .join-us {
@@ -763,7 +763,7 @@ img {
 }
 
 .join-us__text {
-  color: var(--prime-color);
+  color: $prime-color;
   margin-bottom: 20px;
   font-size: 14px;
   font-weight: 700;
@@ -773,7 +773,7 @@ img {
 }
 
 .footer-form__title {
-  color: var(--prime-color);
+  color: $prime-color;
   margin-bottom: 20px;
   font-size: 14px;
   font-weight: 700;
@@ -794,13 +794,13 @@ img {
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   border-radius: 50%;
-  fill: var(--prime-color);
-  background-color: var(--shadow-color);
+  fill: $prime-color;
+  background-color: $shadow-color;
 }
 
 .join-us__link:focus,
 .join-us__link:hover {
-  background-color: var(--accent-color);
+  background-color: $accent-color;
 }
 
 .join-us__item:not(:last-child) {
@@ -833,7 +833,7 @@ img {
 }
 
 .subscribe:focus {
-  border-color: var(--accent-color);
+  border-color: $accent-color;
 }
 
 .send-icon {
@@ -859,7 +859,7 @@ img {
   letter-spacing: 0.03em;
   color: var(--section__title-color);
   border: none;
-  background-color: var(--background-btn-color);
+  background-color: $background-btn-color;
   border-radius: 4px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -869,8 +869,8 @@ img {
 .portfolio-btn:focus,
 .portfolio-btn:hover,
 .portfolio-btn:active {
-  background-color: var(--accent-color);
-  color: var(--prime-color);
+  background-color: $accent-color;
+  color: $prime-color;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 } */
@@ -888,7 +888,7 @@ img {
 /* ----------------------Portfolio gallery------------------------- */
 
 /* .gallery__item {
-  background: var(--prime-color);
+  background: $prime-color;
 }
 
 .text-container__title {
@@ -929,7 +929,7 @@ img {
   height: 100%;
   top: 0;
   left: 0;
-  background-color: var(--portfolio-accent-shade-color);
+  background-color: $portfolio-accent-shade-color;
   transform: translateY(100%);
   opacity: 0;
 }
@@ -942,7 +942,7 @@ img {
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
-  color: var(--prime-color);
+  color: $prime-color;
 }
 
 .gallery__link {

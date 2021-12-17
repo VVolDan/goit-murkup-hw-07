@@ -1,9 +1,9 @@
 .page-top {
-  background-color: var(--prime-color);
+  background-color: $prime-color;
 }
 
 .page-top--line {
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 1px solid $border-color;
 }
 
 .page-top__container {
@@ -21,11 +21,11 @@
 }
 
 .logo--web {
-  color: var(--accent-color);
+  color: $accent-color;
 }
 
 .logo--studio {
-  color: var(--black);
+  color: $header-studio-color;
 }
 
 .nav {
@@ -56,18 +56,18 @@
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--section__title-color);
+  color: $section-title-color;
 
   &:hover,
   &:focus {
-    color: var(--accent-color);
+    color: $accent-color;
   }
 }
 
 .nav__link--current {
   position: relative;
   display: block;
-  color: var(--accent-color);
+  color: $accent-color;
 
   &::after {
     position: absolute;
@@ -113,13 +113,13 @@
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--text-color);
+  color: $text-color;
   display: flex;
   align-items: center;
 
   &:hover,
   &:focus {
-    color: var(--accent-color);
+    color: $accent-color;
   }
 }
 

@@ -24,7 +24,7 @@
   bottom: 0;
   padding: 27px 0;
   width: calc(100% - 20px);
-  background-color: var(--doing-shade-color);
+  background-color: $doing-shade-color;
 }
 
 .description__title {
@@ -34,5 +34,5 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-align: center;
-  color: var(--prime-color);
+  color: $prime-color;
 }

@@ -5,10 +5,10 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/mainbackrground.jpg);
+    url(../images/mainbackrgound.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: var(--background-footer-color);
+  background-color: $background-footer-color;
 }
 
 .main-section__title {
@@ -20,5 +20,5 @@
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--prime-color);
+  color: $prime-color;
 }
