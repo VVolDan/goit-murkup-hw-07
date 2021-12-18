@@ -78,6 +78,6 @@
 
 .text-container {
   padding: 20px 24px;
-  border: 1px solid $portfolio-border-color;
+  @include bordered($width: 2px, $color: $portfolio-border-color);
   border-top: none;
 }

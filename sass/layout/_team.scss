@@ -1,5 +1,6 @@
 .team {
   background-color: $background-team-color;
+  @include indented();
 }
 
 .team__list {
@@ -20,17 +21,15 @@
 .team__sign {
   background-color: $prime-color;
   padding: 30px 32px;
-  display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  @include position-flex($type: center);
 }
 
 .team__name {
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
   color: $section-title-color;

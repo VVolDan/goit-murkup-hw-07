@@ -1,6 +1,9 @@
+.portfolio-navigation {
+  @include indented();
+}
+
 .filter {
-  display: flex;
-  justify-content: center;
+  @include position-flex($type: center);
   margin-bottom: 50px;
 }
 

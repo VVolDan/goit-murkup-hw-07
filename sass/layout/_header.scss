@@ -7,8 +7,7 @@
 }
 
 .page-top__container {
-  display: flex;
-  align-items: center;
+  @include position-flex();
 }
 
 .logo {
@@ -114,8 +113,7 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: $text-color;
-  display: flex;
-  align-items: center;
+  @include position-flex();
 
   &:hover,
   &:focus {

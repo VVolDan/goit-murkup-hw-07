@@ -1,5 +1,5 @@
 .adventages {
-  padding-bottom: 47px;
+  @include indented($padding-bottom: 47px);
 }
 
 .adventages__list {
@@ -14,9 +14,7 @@
 }
 
 .advantages__icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include position-flex();
   padding: 25px 100px;
   background-color: $background-team-color;
   border-radius: 4px;
@@ -25,7 +23,7 @@
 
 .adventages__tittle {
   margin-bottom: 10px;
-  font-weight: bold;
+  font-weight: 700px;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;

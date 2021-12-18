@@ -1,5 +1,5 @@
 .doing {
-  padding-top: 47px;
+  @include indented($padding-top: 47px);
 }
 
 .doing__list {
