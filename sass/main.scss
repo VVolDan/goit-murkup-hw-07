@@ -1,22 +1,27 @@
 @import "./utils/vars";
-@import "./utils/hidden";
 @import "./utils/placeholder";
 @import "./utils/mixin";
 
-@import "./base/reset";
-@import "./base/common";
-
+@import "./components/logo";
+@import "./components/common";
 @import "./components/btn";
-@import "./components/container";
-@import "./components/section-title";
-
-@import "./layout/header";
-@import "./layout/hero";
-@import "./layout/modal";
-@import "./layout/adventages";
-@import "./layout/doing";
-@import "./layout/team";
-@import "./layout/clients";
-@import "./layout/footer";
-@import "./layout/portfolio-navigation";
-@import "./layout/portfolio-gallery";
+@import "./components/section";
+@import "./components/social-list";
+@import "./components/header";
+@import "./components/header-navigation";
+@import "./components/header-contacts";
+@import "./components/hero";
+@import "./components/modal";
+@import "./components/adventages";
+@import "./components/doing";
+@import "./components/description";
+@import "./components/team";
+@import "./components/clients";
+@import "./components/footer";
+@import "./components/footer-contacts";
+@import "./components/subscribe";
+@import "./components/filter";
+@import "./components/gallery";
+@import "./components/input-field";
+@import "./components/comment-field";
+@import "./components/checkbox-field";

@@ -1,3 +1,8 @@
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .gallery__item {
   background: $prime-color;
 
@@ -16,7 +21,7 @@
   }
 }
 
-.text-container__title {
+.gallery__title-container {
   margin-bottom: 4px;
 
   font-weight: 700;
@@ -26,17 +31,12 @@
   color: $section-title-color;
 }
 
-.text-container__type {
+.gallery__type-container {
   margin: 0;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: $text-color;
-}
-
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .gallery__box {
@@ -76,7 +76,7 @@
   }
 }
 
-.text-container {
+.gallery__text-container {
   padding: 20px 24px;
   @include bordered($width: 2px, $color: $portfolio-border-color);
   border-top: none;

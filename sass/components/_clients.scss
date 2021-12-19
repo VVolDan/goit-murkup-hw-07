@@ -1,8 +1,4 @@
 .clients {
-  padding: 94px 0;
-}
-
-.clients__list {
   display: flex;
 }
 
@@ -32,6 +28,6 @@
   }
 }
 
-.clients__link--normal {
+.clients__icon {
   fill: currentColor;
 }

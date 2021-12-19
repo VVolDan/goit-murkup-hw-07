@@ -1,19 +1,19 @@
 .adventages {
-  @include indented($padding-bottom: 47px);
+  padding-bottom: 47px;
 }
 
-.adventages__list {
+.adventages-list {
   display: flex;
 }
 
-.adventages__item {
+.adventages-list__item {
   max-width: 270px;
   &:not(:first-child) {
     margin-left: 30px;
   }
 }
 
-.advantages__icon {
+.adventages-list__icon-wrapper {
   @include position-flex();
   padding: 25px 100px;
   background-color: $background-team-color;
@@ -21,7 +21,7 @@
   margin-bottom: 30px;
 }
 
-.adventages__tittle {
+.adventages-list__title {
   margin-bottom: 10px;
   font-weight: 700px;
   font-size: 14px;
@@ -31,7 +31,7 @@
   color: $section-title-color;
 }
 
-.adventages__text {
+.adventages-list__text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
