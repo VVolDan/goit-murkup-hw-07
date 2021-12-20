@@ -17,14 +17,14 @@
   }
 }
 
-.team-list-temmate {
+.temmate {
   background-color: $prime-color;
   padding: 30px 32px;
   flex-direction: column;
   @include position-flex($justify-content: center);
 }
 
-.team-list-temmate__name {
+.temmate__name {
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -34,7 +34,7 @@
   color: $section-title-color;
 }
 
-.team-list-temmate__position {
+.temmate__position {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;

@@ -7,7 +7,7 @@
   --background-team-color: #f5f4fa;
   --background-footer-color: #2f303a;
   --background-btn-color: #f5f4fa;
-  --footer-contacts-color: rgba(255, 255, 255, 0.6);
+  --secondary-contacts-color: rgba(255, 255, 255, 0.6);
   --black: #000000;
   --border-color: #ececec;
   --portfolio-border-color: #eeeeee;
@@ -550,7 +550,7 @@ img {
   padding-top: 47px;
 }
 
-.doing__list {
+.doing-list {
   display: flex;
 }
 
@@ -576,7 +576,7 @@ img {
   background-color: $doing-shade-color;
 }
 
-.description__title {
+.doing-list__description {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -607,7 +607,7 @@ img {
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-list-temmate {
+.temmate {
   background-color: $prime-color;
   padding: 30px 32px;
   display: flex;
@@ -626,7 +626,7 @@ img {
   color: var(--section__title-color);
 }
 
-.team-list-temmate__position {
+.temmate__position {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -723,7 +723,7 @@ img {
   margin-top: 20px;
 }
 
-.footer-contacts__map {
+.secondary-contacts__map {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -732,8 +732,8 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-contacts__map:hover,
-.footer-contacts__map:focus {
+.secondary-contacts__map:hover,
+.secondary-contacts__map:focus {
   color: $accent-color;
 }
 
@@ -741,19 +741,19 @@ img {
   margin-top: 9px;
 }
 
-.footer-contacts__link {
+.secondary-contacts__link {
   display: inline-block;
 
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: $footer-contacts-color;
+  color: $secondary-contacts-color;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-contacts__link:hover,
-.footer-contacts__link:focus {
+.secondary-contacts__link:hover,
+.secondary-contacts__link:focus {
   color: $accent-color;
 }
 
@@ -762,7 +762,7 @@ img {
   padding-top: 12px;
 }
 
-.footer-title {
+.footer__title {
   color: $prime-color;
   margin-bottom: 20px;
   font-size: 14px;
@@ -772,7 +772,7 @@ img {
   text-transform: uppercase;
 }
 
-.footer-title {
+.footer__title {
   color: $prime-color;
   margin-bottom: 20px;
   font-size: 14px;
@@ -891,7 +891,7 @@ img {
   background: $prime-color;
 }
 
-.gallery__title-container {
+.gallery__title {
   margin-bottom: 4px;
 
   font-weight: 700;
@@ -901,7 +901,7 @@ img {
   color: var(--section__title-color);
 }
 
-.gallery__type-container {
+.gallery__type {
   margin: 0;
   font-size: 16px;
   line-height: 1.87;

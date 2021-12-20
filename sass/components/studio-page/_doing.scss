@@ -1,4 +1,21 @@
-.description {
+.doing {
+  padding-top: 47px;
+}
+
+.doing-list {
+  display: flex;
+}
+
+.doing-list__item {
+  width: calc(100% - 60px / 3);
+  position: relative;
+
+  &::not(:first-child) {
+    margin-left: 30px;
+  }
+}
+
+.doing-list__description-wrapper {
   position: absolute;
   bottom: 0;
   padding: 27px 0;
@@ -6,7 +23,7 @@
   background-color: $doing-shade-color;
 }
 
-.description__title {
+.doing-list__description {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
