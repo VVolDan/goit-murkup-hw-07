@@ -6,7 +6,7 @@
   height: 100%;
   top: 0;
   left: 0;
-  background-color: $modal-shade-color;
+  background-color: rgba($header-studio-color, 0.2);
   opacity: 1;
 
   &.is-hidden {
@@ -21,7 +21,7 @@
 }
 
 .modal {
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform $effect;
   transform: translate(-50%, -50%) scale(1);
 
   position: absolute;
@@ -32,7 +32,6 @@
   max-width: 528px;
   min-height: 580px;
   background-color: $prime-color;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  @extend %shadow;
   border-radius: 4px;
 }

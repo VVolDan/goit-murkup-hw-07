@@ -12,15 +12,14 @@
 .clients__link {
   display: flex;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color $effect, color $effect;
 
-  @include bordered($color: $button-color);
+  @include bordered($color: rgba($button-color, 1));
   padding: 16px 32px;
   border-radius: 4px;
 
   background-color: $prime-color;
-  color: $button-color;
+  color: rgba($button-color, 1);
   &:hover,
   &:focus {
     border-color: $accent-color;

@@ -1,5 +1,5 @@
 .filter {
-  @include position-flex($justify-content: center);
+  @include position-flex($jc: center);
   margin-bottom: 50px;
 }
 

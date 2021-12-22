@@ -1,6 +1,6 @@
 .checkbox-field {
   margin-bottom: 30px;
-  @include position-flex($justify-content: center);
+  @include position-flex($jc: center);
 }
 
 .checkbox-field__input {
@@ -12,9 +12,7 @@
 
 .checkbox-field__label {
   @include position-flex();
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  @extend %font-parameters;
 }
 
 .checkbox-field__icon {
@@ -27,8 +25,7 @@
   border-radius: 2px;
   background-size: contain;
   cursor: pointer;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-size 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color $effect, background-size $effect;
 }
 
 .checkbox-field__input:checked + .checkbox-field__icon {
@@ -43,12 +40,7 @@
 .checkbox-field__conditions {
   margin-left: 5px;
 
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  @extend %font-parameters;
 
   color: $accent-color;
   text-decoration: underline;

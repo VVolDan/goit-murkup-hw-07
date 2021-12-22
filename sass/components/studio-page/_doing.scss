@@ -20,7 +20,7 @@
   bottom: 0;
   padding: 27px 0;
   width: calc(100% - 20px);
-  background-color: $doing-shade-color;
+  background-color: rgba($doing-shade-color, 0.8);
 }
 
 .doing-list__description {
